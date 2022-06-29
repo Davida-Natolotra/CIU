@@ -15,6 +15,9 @@ def generate(comb):
         cd.append(k)
 
     print(f"ls = {ls}, len = {len(ls)}")
+    f = open("ciu_ls.txt", "x")
+    f.write(str(ls))
+    f.close()
     return ls
 
 def check(ls):
